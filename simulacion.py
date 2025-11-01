@@ -3,6 +3,8 @@ import time
 import threading
 import pygame
 import sys
+import cv2         # 👈 Para grabar video
+import numpy as np
 
 # Valores predeterminados de los temporizadores de señal
 defaultGreen = {0:10, 1:10, 2:10, 3:10}
@@ -244,5 +246,7 @@ class Main:
             screen.blit(vehicle.image, [vehicle.x, vehicle.y])
             vehicle.move()
         pygame.display.update()
+
+        
 
 
